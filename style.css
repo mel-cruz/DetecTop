@@ -1,0 +1,81 @@
+/* desktop */
+
+body {
+    margin: 0;
+    font-family: monospace;
+    overflow: hidden;
+    background: radial-gradient(#1b1f2a, #0b0d12);
+}
+
+#desktop {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Icons */
+.icon {
+    width: 110px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon:hover {
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+}
+
+/* windows */
+.window {
+    position: absolute;
+    width: 520px;
+    height: 360px;
+    background-color: #1e2430;
+    border: 1px solid #3a4255;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+/* title bar */
+.titlebar {
+    background-color: #2b3242;
+    padding: 8px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+.titlebar button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* window contet */
+.content {
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+    color: #d7dce6;
+}
+
+/* evidence board */
+#board {
+    width: 100%;
+    height: 100%;
+    background-color: #151a22;
+    position: relative;
+}

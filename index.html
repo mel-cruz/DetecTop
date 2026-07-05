@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DetecTop: Wolfe Investigation</title>
+    <!-- get it, a pun on detective and laptop? -->
+
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/windows.css">
+    <link rel="stylesheet" href="css/board.css">
+</head>
+
+<body>
+
+  <!-- desktop  -->
+  <div id="desktop">
+
+    <!-- icon -->
+    <div class="icon" onclick="openApp('evidence')">
+      Evidence Board
+    </div>
+
+    <!-- evidence window -->
+    <div id="evidenceWindow" class="window hidden">
+
+      <div class="titlebar" onmousedown="startDrag(event, this.parentElement)">
+        <span>Evidence Board</span>
+        <button onclick="closeApp('evidence')">X</button>
+      </div>
+
+      <div class="content">
+        <div id="board">
+          <p>Drag clues here.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- scripts -->
+  <script src="js/windowManager.js"></script>
+  <script src="js/drag.js"></script>
+  <script src="js/clues.js"></script>
+  <script src="js/save.js"></script>
+
+</body>
+</html>
