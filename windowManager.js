@@ -1,4 +1,4 @@
-let topZ = 10;
+https://github.com/mel-cruz/DetecTop.gitlet topZ = 10;
 
 function openApp(name) {
   const win = document.getElementById(name + "Window");
